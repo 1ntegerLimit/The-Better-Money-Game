@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Money Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id = "base">
+        <h1 class = "header">
+            The Money Game
+        </h1>
+        <br>
+        <p id = "balance" class = "text">
+            Balance: £0
+        </p>
+        <p id = "moneyPerClick" class = "text">
+            Money Per Click: £1
+        </p>
+        <p id = "moneyPerSecond" class = "text">
+            Money Per Second: £0
+        </p>
+        <p id = "upgradePrice" class = "text">
+            Upgrade Price: £100
+        </p>
+        <p id = "workersCounter" class = "text">
+            Workers: 0
+        </p>
+        <br><br>
+    </div>
+    <div id = "main">
+        <button class = "bigButton" onclick = MakeMoney()>
+            Make Money
+        </button>
+        <button class = "bigButton" onclick = Upgrade()>
+            Upgrade
+        </button>
+        <br><br>
+        <button class = "bigButton" onclick = Factory()>
+            Factory
+        </button>
+        <button class = "bigButton" onclick = Casino()>
+            Casino
+        </button>
+        <div id = "ascensionInfo">
+            <br><br>
+            <button id = "ascensionButton" class = "bigButton" onclick = Ascension()>
+                Ascend
+            </button>
+            <p id = "ascensionCounter" class = "text">
+                You've ascended 0 times.
+            </p>
+        </div>
+    </div>
+
+    <div id = "factory">
+        <button id = "buyBasicWorker" class = "bigButton" onclick = BasicWorker()>
+            Basic Worker
+        </button>
+        <p id = "basicWorkerPrice">
+            1000
+        </p>
+        <br>
+        <button id = "buyBetterWorker" class = "bigButton" onclick = BetterWorker()>
+            Better Worker
+        </button>
+        <p id = "betterWorkerPrice">
+            2000
+        </p>
+        <br>
+        <button id = "buyHardWorker" class = "bigButton" onclick = HardWorker()>
+            Hard Worker
+        </button>
+        <p id = "hardWorkerPrice">
+            3000
+        </p>
+        <br>
+        <button id = "buyHarderWorker" class = "bigButton" onclick = HarderWorker()>
+            Harder Worker
+        </button>
+        <p id = "harderWorkerPrice">
+            4000
+        </p>
+        <br>
+        <button id = "buyEliteWorker" class = "bigButton" onclick = EliteWorker()>
+            Elite Worker
+        </button>
+        <p id = "eliteWorkerPrice">
+            5000
+        </p>
+        <br>
+        <button id = "buyImpossibleWorker" class = "bigButton" onclick = ImpossibleWorker()>
+            Impossible Worker
+        </button>
+        <p id = "impossibleWorkerPrice">
+            6000
+        </p>
+    </div>
+
+    <div id = "casino">
+        <p id = "chance" class = "text">
+            Win Probability: 10%
+        </p>
+        <button id = "gamble1" class = "bigButton" onclick = Gamble(100)>
+            Gamble £100
+        </button>
+        <br><br>
+        <button id = "gamble2" class = "bigButton" onclick = Gamble(1000)>
+            Gamble £1,000
+        </button>
+        <br><br>
+        <button id = "gamble3" class = "bigButton" onclick = Gamble(10000)>
+            Gamble £10,000
+        </button>
+        <br><br>
+        <button id = "gamble4" class = "bigButton" onclick = Gamble(100000)>
+            Gamble £100,000
+        </button>
+        <p id = "result" class = "text">
+            Start gambling
+        </p>
+        <p id = "profit" class = "text">
+            Profit: £0
+        </p>
+    </div>
+
+    <div id = "gameEndScreen">
+        <br><br><br><br><br><br><br><br><br>
+        <p id = "gameEnd" class = "text">
+            JavaScript's integer limit is 9,007,199,254,740,991. Your balance almost reached that number while on your last Ascension, so you win! Thank you for playing my Cookie Clicker clone.
+        </p>
+        <br><br>
+        <button id = "becomeAscendedAtEndScreen" class = "bigButton" onclick = ModdedAscension()>
+            Ascend
+        </button>
+    </div>
+
+    <div id = "ascend">
+        <h1 class = "header">
+            Ascension
+        </h1>
+        <p class = "text">
+            You are about to ascend. Choose one attribute to take with you:
+        </p>
+        <button id = "ascendWorkers" class = "bigButton" onclick = SelectWorkers()>
+            Ascend Workers
+        </button>
+        <button id = "ascendMoneyStats" class = "bigButton" onclick = SelectMoneyStats()>
+            Ascend Money Stats
+        </button>
+        <button id = "ascendGambling" class = "bigButton" onclick = SelectGambling()>
+            Ascend Gamblng
+        </button>
+        <br><br>
+        <p id = "attributeInfo" class = "text">
+            
+        </p>
+        <br><br>
+        <button id = "becomeAscended" class = "bigButton" onclick = Ascend()>
+            Ascend
+        </button>
+    </div>
+
+    <br><br><br>
+    <button id = "backButton" class = "bigButton" onclick = Main()>
+        Back
+    </button>
+    <br><br><br><br><br><br>
+    <h1 id = "ascensionLoadingScreen" class = "header">
+        ASCENDING
+    </h1>
+</body>
+<script src="script.js"></script>
+</html>
