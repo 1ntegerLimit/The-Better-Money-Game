@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-size: 2em;
+    font-family:Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    background-image: url(https://thumbs.dreamstime.com/b/white-dollar-sign-seamless-background-20732285.jpg);
+}
+
+.bigButton {
+    border-radius: 10px;
+    font-size: 1.5em;
+}
+
+.text {
+    font-size: 1.25em
+}
+
+.bigButton:hover {
+    cursor: pointer;
+    background-color: rgb(200,200,200);
+}
+
+#backButton {
+    background-color: orange;
+    text-align: left;
+}
+
+#backButton:hover {
+    background-color: darkorange;
+}
+
+#ascensionButton {
+    background-color: rgb(255, 75, 75);
+}
+
+#ascensionButton:hover {
+    background-color: red;
+}
+
